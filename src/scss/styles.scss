@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "utils/mixin";
+@import "utils/sample";
 
 @import "base/reset";
 @import "base/fonts";
@@ -8,9 +9,7 @@
 
 @import "shared/buttons";
 
-@import "layout/header";
 @import "layout/common";
-@import "layout/footer";
 
 
 

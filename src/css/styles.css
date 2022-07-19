@@ -1,3 +1,7 @@
+.share:after, .share__content {
+  outline: 1px solid transparent;
+  transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -31,7 +35,7 @@ body {
   background: #fff;
   font-size: 27px;
   line-height: 31px;
-  font-family: "Pinup-Regular";
+  font-family: "Pinup-Regular", sans-serif;
   font-weight: 900;
   min-width: 320px;
   color: #051115; }
@@ -85,3 +89,50 @@ input {
   margin: 0 auto;
   max-width: 1310px;
   padding: 0 15px; }
+
+.share:after, .share__content {
+  outline: 1px solid transparent;
+  transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
+
+.main {
+  background-image: url("../../images/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 40px 0; }
+
+.logo-body {
+  margin-bottom: 50px; }
+
+.logo-content {
+  display: flex; }
+
+.logo {
+  display: flex; }
+
+.share {
+  position: relative;
+  max-width: 730px;
+  width: 100%;
+  padding: 40px 20px; }
+  .share:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #fff; }
+
+.share__content {
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: #ff2400;
+  font-size: 61px;
+  line-height: 74px; }
+
+.share__price {
+  font-size: 84px;
+  line-height: 74px; }

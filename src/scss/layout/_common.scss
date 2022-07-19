@@ -1,3 +1,58 @@
 @import "../utils/variables";
 @import "../utils/mixin";
+@import "../utils/sample";
 
+.main {
+  background-image: url("../../images/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.logo-body {
+  margin-bottom: 50px;
+}
+
+.logo-content {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.share {
+  position: relative;
+  max-width: 730px;
+  width: 100%;
+  padding: 40px 20px;
+
+  &:after {
+    content: '';
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: $white;
+    @extend %angle-modeling;
+  }
+}
+
+
+.share__content {
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: $scarlet;
+  font-size: $font-size-base + 34;
+  line-height: $line-height-base + 43;
+  @extend %angle-modeling;
+}
+
+.share__price {
+  font-size: $font-size-base + 57;
+  line-height: $line-height-base + 43;
+}
