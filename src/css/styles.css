@@ -230,3 +230,31 @@ input {
   font-weight: 500;
   font-size: 21px;
   line-height: 21px; }
+
+.share {
+  outline: 1px solid transparent;
+  transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
+
+#permas {
+  height: 150px;
+  bottom: 0;
+  background: blue;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* added */
+  left: 0;
+  animation-name: scroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+#permas img {
+  height: 100%; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-50%); } }
