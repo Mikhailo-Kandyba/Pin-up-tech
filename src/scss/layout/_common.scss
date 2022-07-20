@@ -9,6 +9,7 @@
   background-position: center;
   min-height: 100vh;
   padding: 40px 0;
+  position: relative;
 }
 
 .logo-body {
@@ -22,3 +23,28 @@
 .logo {
   display: flex;
 }
+
+.star-decoration {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+//.footballer-img-area {
+//  bottom: 0;
+//  right: 0;
+//  width: 1100px;
+//  z-index: 20;
+//}
+//
+//
+//
+//
+//
+//.move-rect{
+//  display: block;
+//  position: relative;
+//  top:50%;
+//  right:50%;
+//  transform: translate(-50%, -50%);
+//}

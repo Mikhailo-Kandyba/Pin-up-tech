@@ -126,6 +126,15 @@ input {
 .w-100 {
   width: 100%; }
 
+.z-index-1 {
+  z-index: 1; }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
 .share {
   outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
@@ -156,7 +165,8 @@ input {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  padding: 40px 0; }
+  padding: 40px 0;
+  position: relative; }
 
 .logo-body {
   margin-bottom: 50px; }
@@ -166,6 +176,11 @@ input {
 
 .logo {
   display: flex; }
+
+.star-decoration {
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .share {
   outline: 1px solid transparent;
