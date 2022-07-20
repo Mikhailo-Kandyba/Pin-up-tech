@@ -2,30 +2,31 @@
 @import "../utils/mixin";
 @import "../utils/sample";
 
-#permas {
-  height: 150px;
-  bottom: 0;
-  background: blue;
+.scroll {
+  height: 740px;
   position: absolute;
-  overflow:hidden;
-  overflow-y: hidden;
-  white-space:nowrap;
-
-  /* added */
+  bottom: 0;
   left: 0;
+  white-space:nowrap;
   animation-name: scroll;
-  animation-duration: 10s;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-#permas img {
+
+.scroll__img {
   height: 100%;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-1000%);
   }
 }
+
+
+
+
