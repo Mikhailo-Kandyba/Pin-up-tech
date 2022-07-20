@@ -1,3 +1,29 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 @import "../utils/sample";
+
+.services {
+  display: flex;
+}
+
+.services__item {
+  flex: 1;
+  padding: 0 110px 0 0;
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+}
+
+.services__icon {
+  max-width: 55px;
+  width: 100%;
+  margin-right: 11px;
+}
+
+.services__text {
+  font-weight: $font-weight-500;
+  font-size: $font-size-base - 6;
+  line-height: $line-height-base - 10;
+}

@@ -117,6 +117,9 @@ input {
 .bg-scarlet {
   background: #ff2400; }
 
+.mb-150 {
+  margin-bottom: 150px; }
+
 .share {
   outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
@@ -151,6 +154,8 @@ input {
   display: flex; }
 
 .main-content {
+  max-width: 950px;
+  width: 100%;
   margin-bottom: 150px; }
 
 .share {
@@ -172,3 +177,24 @@ input {
 .share {
   outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
+
+.services {
+  display: flex; }
+
+.services__item {
+  flex: 1;
+  padding: 0 110px 0 0; }
+
+.services__link {
+  display: flex;
+  align-items: center; }
+
+.services__icon {
+  max-width: 55px;
+  width: 100%;
+  margin-right: 11px; }
+
+.services__text {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 21px; }
