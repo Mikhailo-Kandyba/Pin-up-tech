@@ -2,3 +2,24 @@
 @import "../utils/mixin";
 @import "../utils/sample";
 
+.modal {
+  padding: 0;
+  max-width: 400px;
+
+  a.close-modal {
+    background-image: url("../../images/close-icon.svg");
+    width: 16px;
+    height: 16px;
+    top: 17px;
+    right: 15px;
+  }
+}
+
+.modal__title {
+  font-size: $font-size-base - 9;
+  line-height: $line-height-base - 8;
+  text-align: center;
+  background: $scarlet;
+  padding: 16px;
+  color: $white;
+}

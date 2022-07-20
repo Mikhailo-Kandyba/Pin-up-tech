@@ -314,3 +314,21 @@ input {
 .share {
   outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
+
+.modal {
+  padding: 0;
+  max-width: 400px; }
+  .modal a.close-modal {
+    background-image: url("../../images/close-icon.svg");
+    width: 16px;
+    height: 16px;
+    top: 17px;
+    right: 15px; }
+
+.modal__title {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  background: #ff2400;
+  padding: 16px;
+  color: #fff; }
