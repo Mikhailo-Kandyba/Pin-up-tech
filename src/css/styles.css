@@ -201,6 +201,10 @@ input {
 .services__link {
   display: flex;
   align-items: center; }
+  .services__link:hover .services__text {
+    color: #514d4d; }
+  .services__link:hover .services__icon {
+    filter: contrast(52%); }
 
 .services__icon {
   max-width: 55px;

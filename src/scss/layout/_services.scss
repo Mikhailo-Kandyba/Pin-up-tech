@@ -14,6 +14,16 @@
 .services__link {
   display: flex;
   align-items: center;
+  
+  &:hover {
+    .services__text {
+      color: $emperor;
+    }
+
+    .services__icon {
+      filter: contrast(52%);
+    }
+  }
 }
 
 .services__icon {
