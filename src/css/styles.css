@@ -150,6 +150,8 @@ input {
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .btn {
+  display: inline-block;
+  text-align: center;
   font-size: 25px;
   line-height: 31px;
   font-weight: 700;
@@ -161,6 +163,8 @@ input {
   width: 100%;
   box-shadow: 0 2px 6px -1px #FF2400;
   transition: all .5s; }
+  .btn span {
+    vertical-align: middle; }
   .btn:hover {
     box-shadow: 0 2px 11px 1px #FF2400;
     max-width: 370px; }
@@ -306,3 +310,7 @@ input {
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%); }
+
+.share {
+  outline: 1px solid transparent;
+  transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }

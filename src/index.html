@@ -5,6 +5,9 @@
         <!-- Required meta tags -->
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- jQuery Modal -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <!-- Custom css -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -37,7 +40,10 @@
                             <!--end share-->
                         </div>
                         <div class="mb-63">
-                            <button class="btn bg-scarlet">ОТРИМАТИ БОНУС</button>
+                            <!-- Link to open the modal -->
+                            <a href="#modal-click" class="btn bg-scarlet" rel="modal:open">
+                                <span>ОТРИМАТИ БОНУС</span>
+                            </a>
                         </div>
                         <div class="pe-160">
                                 <!--services-->
@@ -72,27 +78,33 @@
                 <img class="position-absolute smoke-decoration-4" src="./images/smoke-decoration-4.png" width="726" height="494" alt="smoke-decoration">
                 <!--end-smoke-decoration-->
                 <!--footballer-->
-                <div class="position-absolute footballer-img-area">
-                    <img class="move-rect position-absolute " src="./images/footballer-img.png" width="1263" height="1026" alt="footballer-img">
-                </div>
+                <!--<div class="position-absolute footballer-img-area">-->
+                    <!--<img class="move-rect position-absolute " src="./images/footballer-img.png" width="1263" height="1026" alt="footballer-img">-->
+                <!--</div>-->
                 <!--end-footballer-->
                 <!--smoke-decoration-scroll-->
-                <div class="position-absolute scroll">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
-                </div>
+                <!--<div class="position-absolute scroll">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
+                <!--</div>-->
                 <!--end-smoke-decoration-scroll-->
+                <!-- Modal HTML embedded directly into document -->
+                <div id="modal-click" class="modal">
+                    <p>Thanks for clicking. That felt good.</p>
+                    <a href="#" rel="modal:close">Close</a>
+                </div>
             </main>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
