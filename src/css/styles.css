@@ -120,6 +120,12 @@ input {
 .mb-150 {
   margin-bottom: 150px; }
 
+.mw-950 {
+  max-width: 950px; }
+
+.w-100 {
+  width: 100%; }
+
 .share {
   outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
@@ -161,10 +167,9 @@ input {
 .logo {
   display: flex; }
 
-.main-content {
-  max-width: 950px;
-  width: 100%;
-  margin-bottom: 150px; }
+.share {
+  outline: 1px solid transparent;
+  transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .share {
   display: inline-block;

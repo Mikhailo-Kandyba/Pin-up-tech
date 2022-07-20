@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+@import "../utils/sample";
+
+.share {
+  display: inline-block;
+  padding: 30px 48px;
+  margin-bottom: -17px;
+  @extend %angle-modeling;
+}
+
+.share__content {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: $font-size-base + 34;
+  line-height: $line-height-base + 43;
+}
+
+.share__price {
+  font-size: $font-size-base + 57;
+  line-height: $line-height-base + 43;
+}
