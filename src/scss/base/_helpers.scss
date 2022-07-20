@@ -1,2 +1,27 @@
 @import "../utils/variables";
 @import "../utils/mixin";
+@import "../utils/sample";
+
+.bg-white {
+  background: $white;
+}
+
+.text-red-orange {
+  color: $red-orange;
+}
+
+.bg-caribbean-green {
+  background: $caribbean-green;
+}
+
+.text-white {
+  color: $white;
+}
+
+.title-sz-md {
+  font-size: $font-size-base + 24;
+}
+
+.bg-scarlet {
+  background: $scarlet;
+}
