@@ -1,6 +1,5 @@
 @import "../utils/variables";
 @import "../utils/mixin";
-@import "../utils/sample";
 
 .bg-white {
   background: $white;
@@ -22,34 +21,6 @@
   font-size: $font-size-base + 24;
 }
 
-.mb-120 {
-  margin-bottom: 120px;
-}
-
-.mb-63 {
-  margin-bottom: 63px;
-}
-
-.mb-65 {
-  margin-bottom: 65px;
-}
-
-.ms-20 {
-  margin-left: -20px;
-}
-
-.pe-160 {
-  padding-right: 160px;
-}
-
-.mw-950 {
-  max-width: 950px;
-}
-
-.w-100 {
-  width: 100%;
-}
-
 .position-relative {
   position: relative;
 }
@@ -60,6 +31,15 @@
 
 .open-sans-text {
   font-family: $font-open-sans;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.small-sz-text {
+  font-size: $font-size-base + 24 !important;
+  line-height: $line-height-base + 31 !important;
 }
 
 

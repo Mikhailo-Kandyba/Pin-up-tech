@@ -1,6 +1,5 @@
 @import "../utils/variables";
 @import "../utils/mixin";
-@import "../utils/sample";
 
 .btn {
   display: inline-block;
@@ -14,7 +13,7 @@
   padding: 22px 30px;
   max-width: 357px;
   width: 100%;
-  box-shadow: 0 2px 6px -1px #FF2400;
+  box-shadow: 0 2px 6px -1px $scarlet;
   transition: all .5s;
   background: $scarlet;
 
@@ -23,7 +22,7 @@
   }
 
   &:hover {
-    box-shadow: 0 2px 11px 1px #FF2400;
+    box-shadow: 0 2px 11px 1px $scarlet;
     max-width: 370px;
   }
 }

@@ -1,0 +1,14 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.header {
+  margin-bottom: 65px;
+}
+
+.logo {
+  display: inline-block;
+
+  img {
+    width: 190px;
+  }
+}

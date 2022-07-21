@@ -1,6 +1,5 @@
 @import "utils/variables";
 @import "utils/mixin";
-@import "utils/sample";
 
 @import "base/reset";
 @import "base/fonts";
@@ -10,6 +9,7 @@
 @import "shared/buttons";
 
 @import "layout/common";
+@import "layout/header";
 @import "layout/share";
 @import "layout/services";
 @import "layout/scroll-smoke";

@@ -1,12 +1,10 @@
 @import "../utils/variables";
 @import "../utils/mixin";
-@import "../utils/sample";
 
 .share {
   display: inline-block;
   padding: 30px 48px;
-  margin-bottom: -17px;
-  @extend %angle-modeling;
+  transform: rotate3D(-12, 5, -1, 27deg) skewX(-1deg) translateX(0px);
 }
 
 .share__content {
