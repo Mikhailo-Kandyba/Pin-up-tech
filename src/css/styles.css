@@ -157,7 +157,8 @@ input {
   width: 100%;
   min-height: 100%;
   height: auto;
-  object-fit: cover; }
+  object-fit: cover;
+  z-index: -1; }
 
 .banner-body {
   max-width: 950px;
