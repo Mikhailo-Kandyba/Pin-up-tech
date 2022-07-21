@@ -1,6 +1,10 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+#wrapper {
+  overflow: hidden;
+}
+
 .page-content {
   display: flex;
   align-items: center;

@@ -75,9 +75,6 @@ input {
 * {
   box-sizing: border-box; }
 
-#wrapper {
-  overflow: hidden; }
-
 @font-face {
   font-family: 'Pinup-Regular';
   src: url("../../font/pinup/pinup-webfont.woff2") format("woff2"), url("../../font/pinup/pinup-webfont.woff") format("woff");
@@ -142,6 +139,9 @@ input {
     box-shadow: 0 2px 11px 1px #ff2400;
     max-width: 370px; }
 
+#wrapper {
+  overflow: hidden; }
+
 .page-content {
   display: flex;
   align-items: center;
@@ -203,9 +203,8 @@ input {
   margin-bottom: 65px; }
 
 .logo {
-  display: inline-block; }
-  .logo img {
-    width: 190px; }
+  display: inline-block;
+  max-width: 190px; }
 
 .share {
   display: inline-block;
