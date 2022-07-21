@@ -1,9 +1,7 @@
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -99,7 +97,6 @@ input {
   width: 100%; }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .bg-white {
@@ -144,8 +141,10 @@ input {
 .position-absolute {
   position: absolute; }
 
+.open-sans-text {
+  font-family: "Open Sans", sans-serif; }
+
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .btn {
@@ -153,7 +152,7 @@ input {
   text-align: center;
   font-size: 25px;
   line-height: 31px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   color: #fff;
   border-radius: 10px;
@@ -170,7 +169,6 @@ input {
     max-width: 370px; }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .main {
@@ -220,7 +218,6 @@ input {
   width: 845px; }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .share {
@@ -229,9 +226,6 @@ input {
   margin-bottom: -17px; }
 
 .share__content {
-  display: block;
-  position: relative;
-  z-index: 1;
   font-size: 61px;
   line-height: 74px; }
 
@@ -240,7 +234,6 @@ input {
   line-height: 74px; }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .services {
@@ -271,31 +264,30 @@ input {
   line-height: 21px; }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
-.scroll {
+.scroll-smoke {
   height: 740px;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   white-space: nowrap;
-  animation-name: scroll;
-  animation-duration: 50s;
+  animation-name: scroll-smoke;
+  animation-duration: 150s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-.scroll__img {
+.scroll-smoke__img {
   height: 100%; }
 
-@keyframes scroll {
+@keyframes scroll-smoke {
   0% {
     transform: translateX(0); }
   100% {
     transform: translateX(-1000%); } }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .footballer-img-area {
@@ -312,7 +304,6 @@ input {
   transform: translate(-50%, -50%); }
 
 .share {
-  outline: 1px solid transparent;
   transform: rotate3D(-13, 7, -1, 35deg) skewX(2deg) translateX(0px); }
 
 .modal {
