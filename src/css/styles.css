@@ -99,9 +99,6 @@ input {
 .text-red-orange {
   color: #ff4020; }
 
-.title-sz-md {
-  font-size: 51px; }
-
 .position-relative {
   position: relative; }
 
@@ -117,6 +114,10 @@ input {
 .small-sz-text {
   font-size: 51px !important;
   line-height: 62px !important; }
+  @media only screen and (max-width: 1024px) {
+    .small-sz-text {
+      font-size: 37px !important;
+      line-height: 42px !important; } }
 
 .btn {
   display: inline-block;
@@ -133,6 +134,11 @@ input {
   box-shadow: 0 2px 6px -1px #ff2400;
   transition: all .5s;
   background: #ff2400; }
+  @media only screen and (max-width: 1024px) {
+    .btn {
+      font-size: 23px;
+      line-height: 27px;
+      padding: 18px 20px; } }
   .btn span {
     vertical-align: middle; }
   .btn:hover {
@@ -148,6 +154,9 @@ input {
   min-height: 100vh;
   position: relative;
   padding: 60px 0; }
+  @media only screen and (max-width: 1024px) {
+    .page-content {
+      padding: 20px 0; } }
 
 .object-fit-cover {
   position: absolute;
@@ -166,13 +175,22 @@ input {
   width: 100%; }
 
 .banner-content {
-  margin: 0 0 120px -20px; }
+  margin: 0 0 120px -5px; }
+  @media only screen and (max-width: 1024px) {
+    .banner-content {
+      margin: 0 0 80px -5px; } }
 
 .holder-link {
   margin-bottom: 63px; }
 
 .holder-services {
   padding-right: 160px; }
+  @media only screen and (max-width: 1200px) {
+    .holder-services {
+      padding-right: 110px; } }
+  @media only screen and (max-width: 1024px) {
+    .holder-services {
+      padding-right: 0; } }
 
 .star-decoration {
   top: 0;
@@ -209,15 +227,26 @@ input {
 .share {
   display: inline-block;
   padding: 30px 48px;
-  transform: rotate3D(-12, 5, -1, 27deg) skewX(-1deg) translateX(0px); }
+  transform: rotate3D(-11, 5, -1, 27deg) skewX(-1deg) translateX(0px); }
+  @media only screen and (max-width: 1200px) {
+    .share {
+      padding: 25px 28px; } }
 
 .share__content {
   font-size: 61px;
   line-height: 74px; }
+  @media only screen and (max-width: 1024px) {
+    .share__content {
+      font-size: 42px;
+      line-height: 50px; } }
 
 .share__price {
   font-size: 84px;
   line-height: 74px; }
+  @media only screen and (max-width: 1024px) {
+    .share__price {
+      font-size: 65px;
+      line-height: 70px; } }
 
 .services {
   display: flex;
@@ -245,6 +274,9 @@ input {
   font-weight: 500;
   font-size: 21px;
   line-height: 21px; }
+  @media only screen and (max-width: 1024px) {
+    .services__text {
+      font-size: 19px; } }
 
 .scroll-smoke {
   height: 740px;
@@ -267,20 +299,18 @@ input {
   100% {
     transform: translateX(-1000%); } }
 
-.footballer-img-area {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 1100px;
-  z-index: 20; }
-
 .move-rect {
   display: block;
   position: absolute;
   bottom: 0;
-  right: 50%;
-  transform: translate(-50%, 0); }
+  width: 1100px;
+  margin: 0 -910px 0 0; }
+  @media only screen and (max-width: 1200px) {
+    .move-rect {
+      width: 960px; } }
+  @media only screen and (max-width: 1024px) {
+    .move-rect {
+      width: 810px; } }
 
 .modal {
   padding: 0;
@@ -326,7 +356,7 @@ input {
 .fieldset {
   border: 1px solid #a9a8a8;
   border-radius: 4px;
-  padding: 0 10px 4px 16px;
+  padding: 5px 10px 5px 16px;
   margin-bottom: 17px;
   position: relative; }
 
@@ -402,12 +432,17 @@ input {
     height: 0;
     width: 0; }
   .checkbox-container .check-mark:after {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 9px;
-    height: 8px;
-    background-image: url("../../images/check-mark.svg"); }
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 3px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-50deg);
+    display: none; }
 
 .check-mark {
   position: absolute;

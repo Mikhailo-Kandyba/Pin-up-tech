@@ -57,7 +57,7 @@
 .fieldset {
   border: 1px solid $silver-chalice;
   border-radius: 4px;
-  padding: 0 10px 4px 16px;
+  padding: 5px 10px 5px 16px;
   margin-bottom: 17px;
   position: relative;
 }
@@ -109,76 +109,6 @@
   top: 50%;
   left: 40px;
   transform: translate(0, -50%);
-}
-
-.checkbox-body {
-  padding: 16px 0 0 0;
-  border-top: 1px solid $black;
-}
-
-.checkbox-container {
-  display: block;
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-family: $font-family-roboto;
-  font-weight: $font-weight-400;
-  font-size: $font-size-base - 15;
-  line-height: $line-height-base - 19;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  a {
-    color: $scarlet;
-    text-decoration: underline;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  .check-mark {
-    &:after {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 9px;
-      height: 8px;
-      background-image: url("../../images/check-mark.svg");
-    }
-  }
-}
-
-.check-mark {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  height: 15px;
-  width: 15px;
-  border: 1px solid $mercury;
-  border-radius: 4px;
-
-  &:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-}
-
-.checkbox-container input:checked ~ .check-mark:after {
-  display: block;
 }
 
 

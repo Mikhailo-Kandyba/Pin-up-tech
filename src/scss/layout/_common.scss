@@ -11,6 +11,10 @@
   min-height: 100vh;
   position: relative;
   padding: 60px 0;
+
+  @include breakpoint($tablet) {
+    padding: 20px 0;
+  }
 }
 
 .object-fit-cover {
@@ -32,7 +36,11 @@
 }
 
 .banner-content {
-  margin: 0 0 120px -20px;
+  margin: 0 0 120px -5px;
+
+  @include breakpoint($tablet) {
+    margin: 0 0 80px -5px;
+  }
 }
 
 .holder-link {
@@ -41,6 +49,14 @@
 
 .holder-services {
   padding-right: 160px;
+
+  @include breakpoint($desktop) {
+    padding-right: 110px;
+  }
+
+  @include breakpoint($tablet) {
+    padding-right: 0;
+  }
 }
 
 .star-decoration {

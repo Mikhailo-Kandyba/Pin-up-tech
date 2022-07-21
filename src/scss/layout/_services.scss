@@ -37,4 +37,8 @@
   font-weight: $font-weight-500;
   font-size: $font-size-base - 6;
   line-height: $line-height-base - 10;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base - 8;
+  }
 }

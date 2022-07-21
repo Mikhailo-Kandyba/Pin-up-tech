@@ -17,6 +17,12 @@
   transition: all .5s;
   background: $scarlet;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base - 4;
+    line-height: $line-height-base - 4;
+    padding: 18px 20px;
+  }
+
   span {
     vertical-align: middle;
   }
