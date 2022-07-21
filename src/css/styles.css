@@ -146,7 +146,8 @@ input {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  padding: 60px 0; }
 
 .object-fit-cover {
   position: absolute;
