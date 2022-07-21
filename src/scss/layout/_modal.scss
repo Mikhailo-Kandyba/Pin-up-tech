@@ -59,6 +59,7 @@
   border-radius: 4px;
   padding: 0 10px 4px 16px;
   margin-bottom: 17px;
+  position: relative;
 }
 
 .fieldset__label {
@@ -67,6 +68,12 @@
   font-size: $font-size-base - 15;
   line-height: $line-height-base - 15;
   color: $gray;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  z-index: 2;
+  background: #fff;
+  padding: 0 4px;
 }
 
 .fieldset__form-area {
