@@ -274,7 +274,7 @@ input {
   right: 0;
   white-space: nowrap;
   animation-name: scroll-smoke;
-  animation-duration: 150s;
+  animation-duration: 180s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
