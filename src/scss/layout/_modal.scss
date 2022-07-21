@@ -7,13 +7,16 @@
   box-shadow: none;
   border-radius: 0 0 5px 5px;
 
-  a.close-modal {
-    background-image: url("../../images/close-icon.svg");
-    width: 16px;
-    height: 16px;
-    top: 17px;
-    right: 15px;
+  a {
+    &.close-modal {
+      background-image: url("../../images/close-icon.svg");
+      width: 16px;
+      height: 16px;
+      top: 17px;
+      right: 15px;
+    }
   }
+
 }
 
 .modal-body {
@@ -39,7 +42,7 @@
   margin-bottom: 15px;
 }
 
-.form {
+.form-control {
   .btn {
     font-size: $font-size-base - 11;
     line-height: $line-height-base - 9;
@@ -58,7 +61,7 @@
   margin-bottom: 17px;
 }
 
-.fieldset__legend {
+.fieldset__label {
   font-family: $font-family-roboto;
   font-weight: $font-weight-400;
   font-size: $font-size-base - 15;
@@ -69,17 +72,17 @@
 .fieldset__form-area {
   position: relative;
   display: flex;
+}
 
-  input {
-    font-family: $font-family-roboto;
-    font-weight: $font-weight-400;
-    font-size: $font-size-base - 12;
-    line-height: $line-height-base - 16;
-    padding: 5px 5px 5px 67px;
-    
-    &::placeholder {
-      color: $nobel;
-    }
+.fieldset__input {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-400;
+  font-size: $font-size-base - 12;
+  line-height: $line-height-base - 16;
+  padding: 5px 5px 5px 67px;
+
+  &::placeholder {
+    color: $nobel;
   }
 }
 

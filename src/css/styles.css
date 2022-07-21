@@ -314,7 +314,7 @@ input {
   color: #323334;
   margin-bottom: 15px; }
 
-.form .btn {
+.form-control .btn {
   font-size: 16px;
   line-height: 22px;
   box-shadow: none;
@@ -329,7 +329,7 @@ input {
   padding: 0 10px 4px 16px;
   margin-bottom: 17px; }
 
-.fieldset__legend {
+.fieldset__label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -339,14 +339,15 @@ input {
 .fieldset__form-area {
   position: relative;
   display: flex; }
-  .fieldset__form-area input {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 15px;
-    padding: 5px 5px 5px 67px; }
-    .fieldset__form-area input::placeholder {
-      color: #b7b7b7; }
+
+.fieldset__input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 5px 5px 5px 67px; }
+  .fieldset__input::placeholder {
+    color: #b7b7b7; }
 
 .flag-icon {
   width: 30px;
