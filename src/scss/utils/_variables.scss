@@ -5,11 +5,22 @@ $white:                     #fff;
 $caribbean-green:           #00cfa6;
 $red-orange:                #ff4020;
 $scarlet:                   #ff2400;
+$alabaster:                 #fbfbfb;
+$mercury:                   #e4e4e4;
+$silver:                    #cac7c7;
+$silver-chalice:            #a9a8a8;
+$nobel:                     #b7b7b7;
+$gray:                      #8c8c8c;
+$dove-gray:                 #707070;
 $emperor:                   #514d4d;
+$shark:                     #323334;
 $firefly:                   #051115;
+$woodsmoke:                 #131516;
 $black:                     #000;
 // fonts
 $base-font-default:         'Pinup-Regular', sans-serif;
+$font-family-roboto:        'Roboto', sans-serif;
+
 // Body
 $base-text-color:           $firefly;
 $base-background:           $white;
@@ -20,3 +31,4 @@ $base-min-width:            320px;
 // Font-weight
 $font-weight-900:           900;
 $font-weight-500:           500;
+$font-weight-400:           400;

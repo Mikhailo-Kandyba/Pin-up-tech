@@ -5,6 +5,10 @@
         <!-- Required meta tags -->
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <!-- jQuery modal -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <!-- Custom css -->
@@ -40,7 +44,7 @@
                         </div>
                         <div class="mb-63">
                             <!-- Link to open the modal -->
-                            <a href="#modal-click" class="btn bg-scarlet" rel="modal:open">
+                            <a href="#modal-click" class="btn" rel="modal:open">
                                 <span>ОТРИМАТИ БОНУС</span>
                             </a>
                         </div>
@@ -82,25 +86,48 @@
                 <!--</div>-->
                 <!--end-footballer-->
                 <!--smoke-decoration-scroll-->
-                <!--<div class="position-absolute scroll">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                    <!--<img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">-->
-                <!--</div>-->
+                <div class="position-absolute scroll">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                    <img class="scroll__img" src="./images/smoke-decoration-2.png" width="1015" height="736" alt="smoke-decoration">
+                </div>
                 <!--end-smoke-decoration-scroll-->
                 <!-- Modal HTML embedded directly into document -->
                 <div id="modal-click" class="modal">
                     <p class="modal__title">Реєстрація</p>
-                    <p class="modal__subtitle">Введіть свій номер телефону</p>
-
-                    <!--<a href="#" rel="modal:close">Close</a>-->
+                    <div class="modal-body">
+                        <p class="modal__subtitle">Введіть свій номер телефону</p>
+                        <form action="#" class="form">
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Номер телефону</legend>
+                                <div class="fieldset__form-area">
+                                    <input type="text" placeholder="000) 234-56-78">
+                                    <img class="position-absolute flag-icon" src="./images/flag-icon.svg" width="30" height="20" alt="flag-icon">
+                                    <span class="position-absolute prompt-number">+3 (</span>
+                                </div>
+                            </fieldset>
+                            <button class="btn">забрати бонус</button>
+                            <div class="checkbox-body">
+                                <label class="checkbox-container">
+                                    Я погоджуюсь з <a href="#">правилами та умовами</a>
+                                    <input type="checkbox">
+                                    <span class="check-mark"></span>
+                                </label>
+                                <label class="checkbox-container">
+                                    Отримати розсилку про акції по e-mail та  sms
+                                    <input type="checkbox">
+                                    <span class="check-mark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </main>
         </div>

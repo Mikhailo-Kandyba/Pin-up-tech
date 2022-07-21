@@ -5,6 +5,8 @@
 .modal {
   padding: 0;
   max-width: 400px;
+  box-shadow: none;
+  border-radius: 0 0 5px 5px;
 
   a.close-modal {
     background-image: url("../../images/close-icon.svg");
@@ -15,11 +17,159 @@
   }
 }
 
+.modal-body {
+  padding: 26px 45px;
+}
+
 .modal__title {
   font-size: $font-size-base - 9;
   line-height: $line-height-base - 8;
   text-align: center;
   background: $scarlet;
-  padding: 16px;
+  padding: 16px 16px 10px;
   color: $white;
 }
+
+.modal__subtitle {
+  font-family: $font-family-roboto;
+  font-size: $font-size-base - 9;
+  line-height: $line-height-base - 10;
+  font-weight: $font-weight-400;
+  text-align: center;
+  color: $shark;
+  margin-bottom: 15px;
+}
+
+.form {
+  .btn {
+    font-size: $font-size-base - 11;
+    line-height: $line-height-base - 9;
+    box-shadow: none;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 12px 13px;
+    margin-bottom: 15px;
+  }
+}
+
+.fieldset {
+  border: 1px solid $silver-chalice;
+  border-radius: 4px;
+  padding: 0 10px 4px 16px;
+  margin-bottom: 17px;
+}
+
+.fieldset__legend {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-400;
+  font-size: $font-size-base - 15;
+  line-height: $line-height-base - 15;
+  color: $gray;
+}
+
+.fieldset__form-area {
+  position: relative;
+  display: flex;
+
+  input {
+    font-family: $font-family-roboto;
+    font-weight: $font-weight-400;
+    font-size: $font-size-base - 12;
+    line-height: $line-height-base - 16;
+    padding: 5px 5px 5px 67px;
+    
+    &::placeholder {
+      color: $nobel;
+    }
+  }
+}
+
+.flag-icon {
+  width: 30px;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.prompt-number {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-400;
+  font-size: $font-size-base - 11;
+  line-height: $line-height-base - 13;
+  color: $woodsmoke;
+  top: 50%;
+  left: 40px;
+  transform: translate(0, -50%);
+}
+
+.checkbox-body {
+  padding: 16px 0 0 0;
+  border-top: 1px solid $black;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-400;
+  font-size: $font-size-base - 15;
+  line-height: $line-height-base - 19;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  a {
+    color: $scarlet;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .check-mark {
+    &:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 9px;
+      height: 8px;
+      background-image: url("../../images/check-mark.svg");
+    }
+  }
+}
+
+.check-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 15px;
+  width: 15px;
+  border: 1px solid $mercury;
+  border-radius: 4px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.checkbox-container input:checked ~ .check-mark:after {
+  display: block;
+}
+
+
