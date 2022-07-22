@@ -11,7 +11,6 @@
   color: $white;
   border-radius: 10px;
   padding: 22px 30px;
-  max-width: 357px;
   width: 100%;
   box-shadow: 0 2px 6px -1px $scarlet;
   transition: all .5s;
@@ -33,14 +32,10 @@
 
   &:hover {
     box-shadow: 0 2px 11px 1px $scarlet;
-    max-width: 370px;
-
-    @include breakpoint($tablet) {
-      max-width: 310px;
-    }
+    padding: 22px 45px;
 
     @include breakpoint($mobile) {
-      max-width: 100%;
+      padding: 22px 33px;
     }
   }
 }
