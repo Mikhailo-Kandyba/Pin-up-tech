@@ -129,13 +129,13 @@ input {
 .btn {
   display: inline-block;
   text-align: center;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 31px;
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
   border-radius: 10px;
-  padding: 22px 30px;
+  padding: 22px 37px;
   width: 100%;
   box-shadow: 0 2px 6px -1px #ff2400;
   transition: all .5s;
@@ -151,10 +151,11 @@ input {
       line-height: 23px;
       margin-bottom: 10px; } }
   .btn:hover {
-    box-shadow: 0 2px 11px 1px #ff2400; }
+    box-shadow: 0 2px 11px 1px #ff2400;
+    padding: 22px 40px; }
     @media only screen and (max-width: 1023px) {
       .btn:hover {
-        padding: 18px 20px; } }
+        padding: 18px 25px; } }
 
 .conditions-link {
   font-weight: 500;
@@ -179,6 +180,9 @@ input {
   @media only screen and (max-width: 1023px) {
     .page-content {
       padding: 20px 0; } }
+  @media only screen and (max-width: 767px) {
+    .page-content {
+      padding: 37px 0; } }
 
 .object-fit-cover {
   position: absolute;
@@ -210,7 +214,7 @@ input {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 0 70px -13px; } }
+      margin: 0 0 90px -13px; } }
 
 .holder-link {
   margin-bottom: 63px;
@@ -227,7 +231,8 @@ input {
         width: 100%; } }
 
 .holder-services {
-  padding-right: 160px; }
+  max-width: 745px;
+  width: 100%; }
   @media only screen and (max-width: 1298px) {
     .holder-services {
       padding-right: 110px; } }
@@ -308,7 +313,9 @@ input {
       max-width: 170px; } }
   @media only screen and (max-width: 767px) {
     .logo {
-      max-width: 160px; } }
+      max-width: 105px; } }
+  .logo img {
+    display: flex; }
 
 .share {
   display: inline-block;
@@ -390,7 +397,7 @@ input {
 
 .services__item {
   width: 33.3%;
-  padding: 0 50px 0 0;
+  padding: 0 5px 0 0;
   margin-bottom: 10px; }
   @media only screen and (max-width: 1023px) {
     .services__item {
@@ -418,8 +425,8 @@ input {
 
 .services__text {
   font-weight: 500;
-  font-size: 21px;
-  line-height: 21px; }
+  font-size: 27px;
+  line-height: 27px; }
   @media only screen and (max-width: 1023px) {
     .services__text {
       font-size: 19px; } }

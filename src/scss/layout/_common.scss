@@ -15,6 +15,10 @@
   @include breakpoint($tablet) {
     padding: 20px 0;
   }
+
+  @include breakpoint($mobile) {
+    padding: 37px 0;
+  }
 }
 
 .object-fit-cover {
@@ -51,7 +55,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 70px -13px;
+    margin: 0 0 90px -13px;
   }
 }
 
@@ -75,7 +79,8 @@
 }
 
 .holder-services {
-  padding-right: 160px;
+  max-width: 745px;
+  width: 100%;
 
   @include breakpoint($desktop) {
     padding-right: 110px;

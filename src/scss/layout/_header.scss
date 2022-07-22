@@ -20,6 +20,10 @@
   }
 
   @include breakpoint($mobile) {
-    max-width: 160px;
+    max-width: 105px;
+  }
+
+  img {
+    display: flex;
   }
 }

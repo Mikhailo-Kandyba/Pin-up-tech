@@ -4,13 +4,13 @@
 .btn {
   display: inline-block;
   text-align: center;
-  font-size: $font-size-base - 2;
+  font-size: $font-size-base;
   line-height: $line-height-base;
   font-weight: $font-weight-900;
   text-transform: uppercase;
   color: $white;
   border-radius: 10px;
-  padding: 22px 30px;
+  padding: 22px 37px;
   width: 100%;
   box-shadow: 0 2px 6px -1px $scarlet;
   transition: all .5s;
@@ -30,9 +30,10 @@
 
   &:hover {
     box-shadow: 0 2px 11px 1px $scarlet;
+    padding: 22px 40px;
 
     @include breakpoint($tablet) {
-      padding: 18px 20px;
+      padding: 18px 25px;
     }
   }
 }

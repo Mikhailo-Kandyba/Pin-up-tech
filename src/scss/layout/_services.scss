@@ -13,7 +13,7 @@
 
 .services__item {
   width: 33.3%;
-  padding: 0 50px 0 0;
+  padding: 0 5px 0 0;
   margin-bottom: 10px;
 
   @include breakpoint($tablet) {
@@ -53,8 +53,8 @@
 
 .services__text {
   font-weight: $font-weight-500;
-  font-size: $font-size-base - 6;
-  line-height: $line-height-base - 10;
+  font-size: $font-size-base;
+  line-height: $line-height-base - 4;
 
   @include breakpoint($tablet) {
     font-size: $font-size-base - 8;
