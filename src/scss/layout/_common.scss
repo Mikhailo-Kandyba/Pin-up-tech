@@ -79,19 +79,15 @@
 }
 
 .holder-services {
-  max-width: 745px;
-  width: 100%;
-
-  @include breakpoint($desktop) {
-    padding-right: 110px;
-  }
+  padding-right: 140px;
 
   @include breakpoint($tablet) {
-    padding-right: 0;
+    padding-right: 30px;
   }
 
   @include breakpoint($mobile) {
     order: -1;
+    padding-right: 0;
   }
 }
 

@@ -15,7 +15,7 @@
 
   @include breakpoint($tablet) {
     width: 750px;
-    right: -60px;
+    right: -60px !important;
   }
 
   @include breakpoint($mobile) {
