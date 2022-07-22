@@ -4,28 +4,54 @@
 .share {
   font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 30px 48px;
-  transform: rotate3D(-11, 8, -1, 27deg) skewX(-1deg) translateX(0px);
+  padding: 19px 50px 26px 50px;
+  text-transform: uppercase;
+  transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
 
   @include breakpoint($desktop) {
-    transform: rotate3D(-5, 8, -1, 27deg) skewX(-1deg) translateX(0px);
+    transform: rotate3D(-8, 4, -2, 25deg) skewX(-4deg) translateX(0px);
     padding: 23px 28px;
   }
 
   @include breakpoint($tablet) {
-    transform: rotate3D(-7, 8, -1, 27deg) skewX(-1deg) translateX(0px);
-    padding: 23px 28px;
+    padding: 14px 25px;
   }
 
   @include breakpoint($mobile) {
     transform: rotate3D(-31, 16, -5, 27deg) skewX(-1deg) translateX(0px);
-    padding: 13px 8px;
+    text-align: center;
+    padding: 11px 8px;
+  }
+
+  &.share-bonus {
+    @include breakpoint($mobile) {
+      min-width: 340px;
+    }
+  }
+
+  &.share-freebet {
+    margin-top: -6px;
+    padding: 5px 56px 17px 56px;
+
+    @include breakpoint($mobile) {
+      min-width: 276px;
+      margin-top: -5px;
+      padding: 7px 8px;
+    }
+
+    .share__price {
+      @include breakpoint($mobile) {
+        font-size: $font-size-base + 7;
+        line-height: $line-height-base - 2;
+      }
+    }
   }
 }
 
 .share__content {
   font-size: $font-size-base + 34;
   line-height: $line-height-base + 43;
+  text-transform: uppercase;
 
   @include breakpoint($desktop) {
     font-size: $font-size-base + 23;
@@ -63,29 +89,22 @@
   }
 }
 
-.small-sz-text {
-  font-size: $font-size-base + 24 !important;
-  line-height: $line-height-base + 31 !important;
+.share-freebet__text {
+  font-size: $font-size-base + 24;
+  line-height: $line-height-base + 31;
 
   @include breakpoint($desktop) {
-    font-size: $font-size-base + 19 !important;
-    line-height: $line-height-base + 22 !important;
+    font-size: $font-size-base + 19;
+    line-height: $line-height-base + 22;
   }
 
   @include breakpoint($tablet) {
-    font-size: $font-size-base + 6 !important;
-    line-height: $line-height-base + 4 !important;
+    font-size: $font-size-base + 6;
+    line-height: $line-height-base + 4;
   }
 
   @include breakpoint($mobile) {
-    font-size: $font-size-base - 3 !important;
-    line-height: $line-height-base - 2 !important;
-  }
-}
-
-.small-sz-text-sm {
-  @include breakpoint($mobile) {
-    font-size: $font-size-base + 7 !important;
-    line-height: $line-height-base - 2 !important;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 2;
   }
 }

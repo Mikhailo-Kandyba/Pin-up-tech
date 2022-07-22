@@ -189,7 +189,8 @@ input {
       padding: 20px 0; } }
   @media only screen and (max-width: 767px) {
     .page-content {
-      padding: 37px 0; } }
+      padding: 37px 0;
+      align-items: stretch; } }
 
 .object-fit-cover {
   position: absolute;
@@ -212,19 +213,21 @@ input {
   @media only screen and (max-width: 767px) {
     .banner-wrap {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: calc(100% - 74px);
+      justify-content: space-between; } }
 
 .banner-content {
-  margin: 0 0 120px -5px; }
+  margin: 0 0 106px -5px; }
   @media only screen and (max-width: 767px) {
     .banner-content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 0 90px -13px; } }
+      margin: 37px 0 0 0; } }
 
 .holder-link {
-  margin-bottom: 63px;
+  margin-bottom: 61px;
   display: flex;
   align-items: center; }
   @media only screen and (max-width: 767px) {
@@ -239,7 +242,7 @@ input {
         width: 100%; } }
 
 .holder-services {
-  padding-right: 140px; }
+  padding-right: 156px; }
   @media only screen and (max-width: 1023px) {
     .holder-services {
       padding-right: 30px; } }
@@ -306,7 +309,7 @@ input {
   height: 250px; }
 
 .header {
-  margin-bottom: 65px; }
+  margin-bottom: 70px; }
   @media only screen and (max-width: 767px) {
     .header {
       display: flex;
@@ -328,24 +331,41 @@ input {
 .share {
   font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 30px 48px;
-  transform: rotate3D(-11, 8, -1, 27deg) skewX(-1deg) translateX(0px); }
+  padding: 19px 50px 26px 50px;
+  text-transform: uppercase;
+  transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px); }
   @media only screen and (max-width: 1298px) {
     .share {
-      transform: rotate3D(-5, 8, -1, 27deg) skewX(-1deg) translateX(0px);
+      transform: rotate3D(-8, 4, -2, 25deg) skewX(-4deg) translateX(0px);
       padding: 23px 28px; } }
   @media only screen and (max-width: 1023px) {
     .share {
-      transform: rotate3D(-7, 8, -1, 27deg) skewX(-1deg) translateX(0px);
-      padding: 23px 28px; } }
+      padding: 14px 25px; } }
   @media only screen and (max-width: 767px) {
     .share {
       transform: rotate3D(-31, 16, -5, 27deg) skewX(-1deg) translateX(0px);
-      padding: 13px 8px; } }
+      text-align: center;
+      padding: 11px 8px; } }
+  @media only screen and (max-width: 767px) {
+    .share.share-bonus {
+      min-width: 340px; } }
+  .share.share-freebet {
+    margin-top: -6px;
+    padding: 5px 56px 17px 56px; }
+    @media only screen and (max-width: 767px) {
+      .share.share-freebet {
+        min-width: 276px;
+        margin-top: -5px;
+        padding: 7px 8px; } }
+    @media only screen and (max-width: 767px) {
+      .share.share-freebet .share__price {
+        font-size: 34px;
+        line-height: 29px; } }
 
 .share__content {
   font-size: 61px;
-  line-height: 74px; }
+  line-height: 74px;
+  text-transform: uppercase; }
   @media only screen and (max-width: 1298px) {
     .share__content {
       font-size: 50px;
@@ -375,26 +395,21 @@ input {
       font-size: 35px;
       line-height: 35px; } }
 
-.small-sz-text {
-  font-size: 51px !important;
-  line-height: 62px !important; }
+.share-freebet__text {
+  font-size: 51px;
+  line-height: 62px; }
   @media only screen and (max-width: 1298px) {
-    .small-sz-text {
-      font-size: 46px !important;
-      line-height: 53px !important; } }
+    .share-freebet__text {
+      font-size: 46px;
+      line-height: 53px; } }
   @media only screen and (max-width: 1023px) {
-    .small-sz-text {
-      font-size: 33px !important;
-      line-height: 35px !important; } }
+    .share-freebet__text {
+      font-size: 33px;
+      line-height: 35px; } }
   @media only screen and (max-width: 767px) {
-    .small-sz-text {
-      font-size: 24px !important;
-      line-height: 29px !important; } }
-
-@media only screen and (max-width: 767px) {
-  .small-sz-text-sm {
-    font-size: 34px !important;
-    line-height: 29px !important; } }
+    .share-freebet__text {
+      font-size: 24px;
+      line-height: 29px; } }
 
 .services {
   display: flex;
@@ -405,7 +420,8 @@ input {
 
 .services__item {
   width: 33.3%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding: 0 18px 0 0; }
 
 .services__link {
   display: flex;
@@ -426,8 +442,8 @@ input {
 
 .services__text {
   font-weight: 500;
-  font-size: 27px;
-  line-height: 27px; }
+  font-size: 26px;
+  line-height: 26px; }
   @media only screen and (max-width: 1023px) {
     .services__text {
       font-size: 24px; } }

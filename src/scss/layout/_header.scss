@@ -2,7 +2,7 @@
 @import "../utils/mixin";
 
 .header {
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 
   @include breakpoint($mobile) {
     display: flex;
