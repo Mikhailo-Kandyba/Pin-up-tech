@@ -8,9 +8,8 @@
 .page-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
   position: relative;
-  padding: 60px 0;
+  min-height: calc(100vh - 120px);
 
   @include breakpoint($tablet) {
     padding: 20px 0;

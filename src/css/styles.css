@@ -181,9 +181,8 @@ input {
 .page-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
   position: relative;
-  padding: 60px 0; }
+  min-height: calc(100vh - 120px); }
   @media only screen and (max-width: 1023px) {
     .page-content {
       padding: 20px 0; } }
@@ -331,15 +330,22 @@ input {
 .share {
   font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 19px 50px 26px 50px;
+  padding: 19px 50px 25px 51px;
   text-transform: uppercase;
-  transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px); }
+  letter-spacing: -2px;
+  -moz-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -webkit-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -o-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -ms-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px); }
   @media only screen and (max-width: 1298px) {
     .share {
       padding: 23px 28px; } }
   @media only screen and (max-width: 1023px) {
     .share {
-      transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -moz-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -webkit-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -o-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -ms-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
       padding: 14px 25px; } }
   @media only screen and (max-width: 767px) {
     .share {
@@ -349,11 +355,16 @@ input {
     .share.share-bonus {
       min-width: 340px; } }
   .share.share-freebet {
-    margin-top: -6px;
+    margin-top: -4px;
     padding: 5px 56px 17px 56px; }
     @media only screen and (max-width: 1298px) {
       .share.share-freebet {
-        margin-top: -9px; } }
+        margin-top: -7px;
+        padding: 5px 56px 17px 27px; } }
+    @media only screen and (max-width: 1023px) {
+      .share.share-freebet {
+        margin-top: -5px;
+        padding: 8px 33px 10px 27px; } }
     @media only screen and (max-width: 767px) {
       .share.share-freebet {
         min-width: 276px;

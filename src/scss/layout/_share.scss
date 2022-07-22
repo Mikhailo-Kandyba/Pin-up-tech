@@ -4,21 +4,27 @@
 .share {
   font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 19px 50px 26px 50px;
+  padding: 19px 50px 25px 51px;
   text-transform: uppercase;
-  transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  letter-spacing: -2px;
+  -moz-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -webkit-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -o-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
+  -ms-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
 
   @include breakpoint($desktop) {
     padding: 23px 28px;
   }
 
   @include breakpoint($tablet) {
-    transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -moz-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
+    -webkit-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
+    -o-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
+    -ms-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
     padding: 14px 25px;
   }
 
   @include breakpoint($mobile) {
-    //transform: rotate3D(-31, 16, -5, 27deg) skewX(-1deg) translateX(0px);
     text-align: center;
     padding: 11px 8px;
   }
@@ -30,11 +36,17 @@
   }
 
   &.share-freebet {
-    margin-top: -6px;
+    margin-top: -4px;
     padding: 5px 56px 17px 56px;
 
     @include breakpoint($desktop) {
-      margin-top: -9px;
+      margin-top: -7px;
+      padding: 5px 56px 17px 27px;
+    }
+
+    @include breakpoint($tablet) {
+      margin-top: -5px;
+      padding: 8px 33px 10px 27px;
     }
 
     @include breakpoint($mobile) {
