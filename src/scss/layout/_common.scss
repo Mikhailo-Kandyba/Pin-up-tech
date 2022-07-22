@@ -31,15 +31,13 @@
 }
 
 .banner-wrap {
+  max-width: 950px;
+  width: 100%;
+
   @include breakpoint($mobile) {
     display: flex;
     flex-direction: column;
   }
-}
-
-.banner-body {
-  max-width: 950px;
-  width: 100%;
 }
 
 .banner-content {
