@@ -33,14 +33,4 @@
   z-index: 1;
 }
 
-.small-sz-text {
-  font-size: $font-size-base + 24 !important;
-  line-height: $line-height-base + 31 !important;
-
-  @include breakpoint($tablet) {
-    font-size: $font-size-base + 10 !important;
-    line-height: $line-height-base + 11 !important;
-  }
-}
-
 

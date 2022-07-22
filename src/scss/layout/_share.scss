@@ -4,16 +4,22 @@
 .share {
   display: inline-block;
   padding: 30px 48px;
-  transform: rotate3D(-11, 5, -1, 27deg) skewX(-1deg) translateX(0px);
+  transform: rotate3D(-11, 8, -1, 27deg) skewX(-1deg) translateX(0px);
 
   @include breakpoint($desktop) {
-    padding: 25px 28px;
+    transform: rotate3D(-5, 8, -1, 27deg) skewX(-1deg) translateX(0px);
+    padding: 23px 28px;
   }
 }
 
 .share__content {
   font-size: $font-size-base + 34;
   line-height: $line-height-base + 43;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 23;
+    line-height: $line-height-base + 24;
+  }
 
   @include breakpoint($tablet) {
     font-size: $font-size-base + 15;
@@ -25,8 +31,28 @@
   font-size: $font-size-base + 57;
   line-height: $line-height-base + 43;
 
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 38;
+    line-height: $line-height-base + 39;
+  }
+
   @include breakpoint($tablet) {
     font-size: $font-size-base + 38;
     line-height: $line-height-base + 39;
+  }
+}
+
+.small-sz-text {
+  font-size: $font-size-base + 24 !important;
+  line-height: $line-height-base + 31 !important;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 19;
+    line-height: $line-height-base + 22;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 10 !important;
+    line-height: $line-height-base + 11 !important;
   }
 }

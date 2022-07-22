@@ -12,6 +12,10 @@
   animation-duration: 180s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+
+  @include breakpoint($desktop) {
+    height: 360px;
+  }
 }
 
 .scroll-smoke__img {
