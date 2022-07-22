@@ -2,9 +2,8 @@
 @import "../utils/mixin";
 
 .share {
-  font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 19px 50px 25px 51px;
+  padding: 18px 50px 25px 51px;
   text-transform: uppercase;
   letter-spacing: -2px;
   -moz-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
@@ -17,16 +16,21 @@
   }
 
   @include breakpoint($tablet) {
-    -moz-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
-    -webkit-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
-    -o-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
-    -ms-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);;
+    -moz-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -webkit-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -o-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -ms-transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
     padding: 14px 25px;
   }
 
   @include breakpoint($mobile) {
+    -moz-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -webkit-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -o-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+    -ms-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
     text-align: center;
-    padding: 11px 8px;
+    padding: 11px 4px;
+    letter-spacing: -1px;
   }
 
   &.share-bonus {
@@ -51,8 +55,8 @@
 
     @include breakpoint($mobile) {
       min-width: 276px;
-      margin-top: -5px;
-      padding: 7px 8px;
+      margin-top: -4px;
+      padding: 7px 15px;
     }
 
     .share__price {
@@ -100,7 +104,7 @@
   }
 
   @include breakpoint($mobile) {
-    font-size: $font-size-base + 8;
+    font-size: $font-size-base + 12;
     line-height: $line-height-base + 4
   }
 }

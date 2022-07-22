@@ -99,17 +99,11 @@ input {
 .text-red-orange {
   color: #ff4020; }
 
-.position-relative {
-  position: relative; }
-
 .position-absolute {
   position: absolute; }
 
 .open-sans-text {
   font-family: "Open Sans", sans-serif; }
-
-.z-index-1 {
-  z-index: 1; }
 
 .display-sm-block {
   display: none; }
@@ -145,7 +139,7 @@ input {
   @media only screen and (max-width: 767px) {
     .btn {
       font-size: 21px;
-      line-height: 24px;
+      line-height: 23px;
       margin-bottom: 14px; } }
   .btn:hover {
     box-shadow: 0 2px 11px 1px #ff2400;
@@ -182,14 +176,18 @@ input {
   display: flex;
   align-items: center;
   position: relative;
-  min-height: calc(100vh - 120px); }
-  @media only screen and (max-width: 1023px) {
-    .page-content {
-      padding: 20px 0; } }
+  min-height: 100vh; }
   @media only screen and (max-width: 767px) {
     .page-content {
-      padding: 37px 0;
       align-items: stretch; } }
+
+.container-details {
+  position: relative;
+  z-index: 1;
+  padding: 60px 15px; }
+  @media only screen and (max-width: 767px) {
+    .container-details {
+      padding: 37px 15px; } }
 
 .object-fit-cover {
   position: absolute;
@@ -208,7 +206,7 @@ input {
   width: 100%; }
   @media only screen and (max-width: 1023px) {
     .banner-wrap {
-      max-width: 880px; } }
+      max-width: 768px; } }
   @media only screen and (max-width: 767px) {
     .banner-wrap {
       display: flex;
@@ -217,7 +215,7 @@ input {
       justify-content: space-between; } }
 
 .banner-content {
-  margin: 0 0 106px -5px; }
+  margin: 0 0 104px -5px; }
   @media only screen and (max-width: 767px) {
     .banner-content {
       display: flex;
@@ -241,10 +239,8 @@ input {
         width: 100%; } }
 
 .holder-services {
-  padding-right: 156px; }
-  @media only screen and (max-width: 1023px) {
-    .holder-services {
-      padding-right: 30px; } }
+  max-width: 818px;
+  line-height: 100%; }
   @media only screen and (max-width: 767px) {
     .holder-services {
       order: -1;
@@ -328,9 +324,8 @@ input {
     display: flex; }
 
 .share {
-  font-family: Arial, sans-serif;
   display: inline-block;
-  padding: 19px 50px 25px 51px;
+  padding: 18px 50px 25px 51px;
   text-transform: uppercase;
   letter-spacing: -2px;
   -moz-transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px);
@@ -349,8 +344,13 @@ input {
       padding: 14px 25px; } }
   @media only screen and (max-width: 767px) {
     .share {
+      -moz-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -webkit-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -o-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
+      -ms-transform: rotate3D(-13, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
       text-align: center;
-      padding: 11px 8px; } }
+      padding: 11px 4px;
+      letter-spacing: -1px; } }
   @media only screen and (max-width: 767px) {
     .share.share-bonus {
       min-width: 340px; } }
@@ -368,8 +368,8 @@ input {
     @media only screen and (max-width: 767px) {
       .share.share-freebet {
         min-width: 276px;
-        margin-top: -5px;
-        padding: 7px 8px; } }
+        margin-top: -4px;
+        padding: 7px 15px; } }
     @media only screen and (max-width: 767px) {
       .share.share-freebet .share__price {
         font-size: 34px;
@@ -405,7 +405,7 @@ input {
       line-height: 52px; } }
   @media only screen and (max-width: 767px) {
     .share__price {
-      font-size: 35px;
+      font-size: 39px;
       line-height: 35px; } }
 
 .share-freebet__text {
@@ -432,9 +432,29 @@ input {
       justify-content: space-between; } }
 
 .services__item {
-  width: 33.3%;
   margin-bottom: 10px;
-  padding: 0 18px 0 0; }
+  padding: 0 39px 0 0; }
+  @media only screen and (max-width: 1023px) {
+    .services__item {
+      padding: 0 30px 0 0; } }
+  @media only screen and (max-width: 767px) {
+    .services__item {
+      padding: 0 2px 0 0; } }
+  .services__item:first-child {
+    width: 30%; }
+    @media only screen and (max-width: 767px) {
+      .services__item:first-child {
+        width: 35%; } }
+  .services__item:nth-child(2) {
+    width: 35%; }
+    @media only screen and (max-width: 767px) {
+      .services__item:nth-child(2) {
+        width: 42%; } }
+  .services__item:last-child {
+    width: 35%; }
+    @media only screen and (max-width: 767px) {
+      .services__item:last-child {
+        width: 23%; } }
 
 .services__link {
   display: flex;
