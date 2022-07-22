@@ -7,7 +7,6 @@
   bottom: 0;
   right: 0;
   width: 1100px;
-  //margin: 0 -520px 0 0;
 
   @include breakpoint($desktop) {
     width: 860px;
@@ -17,5 +16,11 @@
   @include breakpoint($tablet) {
     width: 750px;
     right: -60px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 540px;
+    right: -20px;
+    bottom: 80px;
   }
 }

@@ -33,4 +33,20 @@
   z-index: 1;
 }
 
+.display-sm-block {
+  display: none;
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+}
+
+.display-sm-none {
+  display: block;
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
 

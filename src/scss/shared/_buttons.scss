@@ -24,6 +24,13 @@
     max-width: 290px;
   }
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 8;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
   &:hover {
     box-shadow: 0 2px 11px 1px $scarlet;
     max-width: 370px;
@@ -31,5 +38,23 @@
     @include breakpoint($tablet) {
       max-width: 310px;
     }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+    }
+  }
+}
+
+.conditions-link {
+  font-weight: $font-weight-500;
+  font-size: $font-size-base - 10;
+  line-height: $line-height-base - 8;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
   }
 }

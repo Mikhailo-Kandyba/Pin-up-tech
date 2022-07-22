@@ -21,6 +21,10 @@
 
 .modal-body {
   padding: 26px 45px;
+
+  @include breakpoint($mobile) {
+    padding: 8px;
+  }
 }
 
 .modal__title {
@@ -30,6 +34,10 @@
   background: $scarlet;
   padding: 16px 16px 10px;
   color: $white;
+
+  @include breakpoint($mobile) {
+    padding: 12px 11px 9px;
+  }
 }
 
 .modal__subtitle {

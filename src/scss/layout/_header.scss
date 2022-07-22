@@ -3,6 +3,12 @@
 
 .header {
   margin-bottom: 65px;
+
+  @include breakpoint($mobile) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
 }
 
 .logo {
@@ -11,5 +17,9 @@
 
   @include breakpoint($tablet) {
     max-width: 170px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 160px;
   }
 }

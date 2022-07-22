@@ -21,6 +21,10 @@
     animation-duration: 0s;
     height: 120px;
   }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
 }
 
 .scroll-smoke__img {
