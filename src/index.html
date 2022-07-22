@@ -106,17 +106,17 @@
                 <div id="modal-click" class="modal">
                     <h4 class="modal__title">Реєстрація</h4>
                     <div class="modal-body">
-                        <h4 class="modal__subtitle">Введіть свій номер телефону</h4>
-                        <form action="#" class="form-control">
-                            <fieldset class="fieldset">
-                                <label class="fieldset__label">Номер телефону</label>
-                                <div class="fieldset__form-area">
+                        <h5 class="modal__subtitle">Введіть свій номер телефону</h5>
+                        <form action="#" class="registration-form">
+                            <div class="contact-control">
+                                <label for="phone" class="contact-control__label">Номер телефону</label>
+                                <div class="contact-control__area">
                                     <img class="position-absolute flag-icon" src="./images/flag-icon.svg" width="30" height="20" alt="flag-icon">
                                     <span class="position-absolute prompt-number">+3 (</span>
-                                    <input class="fieldset__input" type="number" placeholder="000) 234-56-78">
+                                    <input id="phone" class="contact-control__input" type="tel" placeholder="000) 234-56-78">
                                 </div>
-                            </fieldset>
-                            <button class="btn" type="button">забрати бонус</button>
+                            </div>
+                            <button class="btn btn-sm" type="button">забрати бонус</button>
                             <div class="checkbox-body">
                                 <label class="checkbox-container">
                                     Я погоджуюсь з <a target="_blank" href="#">правилами та умовами</a>

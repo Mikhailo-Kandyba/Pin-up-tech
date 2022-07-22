@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: $white;
   border-radius: 10px;
-  padding: 22px 37px;
+  padding: 22px 38px;
   width: 100%;
   box-shadow: 0 2px 6px -1px $scarlet;
   transition: all .5s;
@@ -24,16 +24,30 @@
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 6;
-    line-height: $line-height-base - 8;
-    margin-bottom: 10px;
+    line-height: $line-height-base - 7;
+    margin-bottom: 14px;
   }
 
   &:hover {
     box-shadow: 0 2px 11px 1px $scarlet;
-    padding: 22px 40px;
+    padding: 22px 44px;
 
     @include breakpoint($tablet) {
       padding: 18px 25px;
+    }
+  }
+
+  &.btn-sm {
+    font-size: $font-size-base - 11;
+    line-height: $line-height-base - 9;
+    box-shadow: none;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 12px 13px;
+    margin-bottom: 15px;
+
+    &:hover {
+      box-shadow: 0 2px 6px -1px $scarlet;
     }
   }
 }

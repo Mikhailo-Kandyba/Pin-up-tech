@@ -1,6 +1,10 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+.blocker {
+  background-color: rgba(0,0,0,0.5);
+}
+
 .modal {
   padding: 0;
   max-width: 400px;
@@ -9,14 +13,36 @@
 
   a {
     &.close-modal {
-      background-image: url("../../images/close-icon.svg");
+      position: absolute;
+      background: none;
       width: 16px;
       height: 16px;
       top: 17px;
-      right: 15px;
+      right: 24px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 17px;
+        width: 3px;
+        background-color: $white;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
     }
   }
-
 }
 
 .modal-body {
@@ -34,6 +60,7 @@
   background: $scarlet;
   padding: 16px 16px 10px;
   color: $white;
+  text-transform: uppercase;
 
   @include breakpoint($mobile) {
     padding: 12px 11px 9px;
@@ -47,22 +74,10 @@
   font-weight: $font-weight-400;
   text-align: center;
   color: $shark;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
-.form-control {
-  .btn {
-    font-size: $font-size-base - 11;
-    line-height: $line-height-base - 9;
-    box-shadow: none;
-    border-radius: 2px;
-    max-width: 100%;
-    padding: 12px 13px;
-    margin-bottom: 15px;
-  }
-}
-
-.fieldset {
+.contact-control {
   border: 1px solid $silver-chalice;
   border-radius: 4px;
   padding: 5px 10px 5px 16px;
@@ -70,7 +85,7 @@
   position: relative;
 }
 
-.fieldset__label {
+.contact-control__label {
   font-family: $font-family-roboto;
   font-weight: $font-weight-400;
   font-size: $font-size-base - 15;
@@ -84,12 +99,12 @@
   padding: 0 4px;
 }
 
-.fieldset__form-area {
+.contact-control__area {
   position: relative;
   display: flex;
 }
 
-.fieldset__input {
+.contact-control__input {
   font-family: $font-family-roboto;
   font-weight: $font-weight-400;
   font-size: $font-size-base - 12;
