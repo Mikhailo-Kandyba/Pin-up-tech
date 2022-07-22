@@ -336,14 +336,13 @@ input {
   transform: rotate3D(-11, 6, -2, 27deg) skewX(-2deg) translateX(-7px); }
   @media only screen and (max-width: 1298px) {
     .share {
-      transform: rotate3D(-8, 4, -2, 25deg) skewX(-4deg) translateX(0px);
       padding: 23px 28px; } }
   @media only screen and (max-width: 1023px) {
     .share {
+      transform: rotate3D(-11, 6, -2.5, 27deg) skewX(-2deg) translateX(-2px);
       padding: 14px 25px; } }
   @media only screen and (max-width: 767px) {
     .share {
-      transform: rotate3D(-31, 16, -5, 27deg) skewX(-1deg) translateX(0px);
       text-align: center;
       padding: 11px 8px; } }
   @media only screen and (max-width: 767px) {
@@ -352,6 +351,9 @@ input {
   .share.share-freebet {
     margin-top: -6px;
     padding: 5px 56px 17px 56px; }
+    @media only screen and (max-width: 1298px) {
+      .share.share-freebet {
+        margin-top: -9px; } }
     @media only screen and (max-width: 767px) {
       .share.share-freebet {
         min-width: 276px;
