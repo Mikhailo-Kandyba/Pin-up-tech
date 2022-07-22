@@ -2,7 +2,7 @@
 @import "../utils/mixin";
 
 .share {
-  display: block;
+  display: inline-block;
   padding: 30px 48px;
   transform: rotate3D(-11, 8, -1, 27deg) skewX(-1deg) translateX(0px);
 

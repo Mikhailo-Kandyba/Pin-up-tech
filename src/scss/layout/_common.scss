@@ -34,6 +34,10 @@
   max-width: 950px;
   width: 100%;
 
+  @include breakpoint($tablet) {
+    max-width: 880px;
+  }
+
   @include breakpoint($mobile) {
     display: flex;
     flex-direction: column;

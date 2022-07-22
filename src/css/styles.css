@@ -144,20 +144,17 @@ input {
     .btn {
       font-size: 21px;
       line-height: 24px;
-      padding: 18px 20px;
-      max-width: 290px; } }
+      padding: 18px 20px; } }
   @media only screen and (max-width: 767px) {
     .btn {
       font-size: 21px;
       line-height: 23px;
-      max-width: 100%;
       margin-bottom: 10px; } }
   .btn:hover {
-    box-shadow: 0 2px 11px 1px #ff2400;
-    padding: 22px 45px; }
-    @media only screen and (max-width: 767px) {
+    box-shadow: 0 2px 11px 1px #ff2400; }
+    @media only screen and (max-width: 1023px) {
       .btn:hover {
-        padding: 22px 33px; } }
+        padding: 18px 20px; } }
 
 .conditions-link {
   font-weight: 500;
@@ -198,6 +195,9 @@ input {
 .banner-wrap {
   max-width: 950px;
   width: 100%; }
+  @media only screen and (max-width: 1023px) {
+    .banner-wrap {
+      max-width: 880px; } }
   @media only screen and (max-width: 767px) {
     .banner-wrap {
       display: flex;
@@ -311,7 +311,7 @@ input {
       max-width: 160px; } }
 
 .share {
-  display: block;
+  display: inline-block;
   padding: 30px 48px;
   transform: rotate3D(-11, 8, -1, 27deg) skewX(-1deg) translateX(0px); }
   @media only screen and (max-width: 1298px) {
