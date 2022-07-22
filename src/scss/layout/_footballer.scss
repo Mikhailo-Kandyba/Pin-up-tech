@@ -13,4 +13,9 @@
     width: 860px;
     right: -90px;
   }
+
+  @include breakpoint($tablet) {
+    width: 750px;
+    right: -60px;
+  }
 }

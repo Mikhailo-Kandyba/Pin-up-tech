@@ -37,14 +37,6 @@
 
 .banner-content {
   margin: 0 0 120px -5px;
-
-  @include breakpoint($desktop) {
-    margin: 0 0 120px -21px;
-  }
-
-  @include breakpoint($tablet) {
-    margin: 0 0 80px -5px;
-  }
 }
 
 .holder-link {
@@ -94,6 +86,10 @@
 
   @include breakpoint($desktop) {
     width: 405px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 868px;
   }
 }
 

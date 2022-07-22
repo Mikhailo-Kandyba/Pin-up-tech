@@ -10,6 +10,11 @@
     transform: rotate3D(-5, 8, -1, 27deg) skewX(-1deg) translateX(0px);
     padding: 23px 28px;
   }
+
+  @include breakpoint($tablet) {
+    transform: rotate3D(-7, 8, -1, 27deg) skewX(-1deg) translateX(0px);
+    padding: 23px 28px;
+  }
 }
 
 .share__content {
@@ -22,8 +27,8 @@
   }
 
   @include breakpoint($tablet) {
-    font-size: $font-size-base + 15;
-    line-height: $line-height-base + 19;
+    font-size: $font-size-base + 8;
+    line-height: $line-height-base + 9;
   }
 }
 
@@ -37,8 +42,8 @@
   }
 
   @include breakpoint($tablet) {
-    font-size: $font-size-base + 38;
-    line-height: $line-height-base + 39;
+    font-size: $font-size-base + 21;
+    line-height: $line-height-base + 21;
   }
 }
 
@@ -47,12 +52,12 @@
   line-height: $line-height-base + 31 !important;
 
   @include breakpoint($desktop) {
-    font-size: $font-size-base + 19;
-    line-height: $line-height-base + 22;
+    font-size: $font-size-base + 19 !important;
+    line-height: $line-height-base + 22 !important;
   }
 
   @include breakpoint($tablet) {
-    font-size: $font-size-base + 10 !important;
-    line-height: $line-height-base + 11 !important;
+    font-size: $font-size-base + 6 !important;
+    line-height: $line-height-base + 4 !important;
   }
 }

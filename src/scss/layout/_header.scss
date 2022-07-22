@@ -8,4 +8,8 @@
 .logo {
   display: inline-block;
   max-width: 190px;
+
+  @include breakpoint($tablet) {
+    max-width: 170px;
+  }
 }

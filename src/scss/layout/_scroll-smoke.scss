@@ -16,6 +16,11 @@
   @include breakpoint($desktop) {
     height: 360px;
   }
+
+  @include breakpoint($tablet) {
+    animation-duration: 0s;
+    height: 120px;
+  }
 }
 
 .scroll-smoke__img {
